@@ -1,0 +1,43 @@
+{
+  "name": "grx-docs",
+  "version": "1.0.0",
+  "description": "Own your layout with a friendly flex-based grid",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "grx": "^2.2.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-dest": "^0.2.3",
+    "gulp-gzip": "^1.4.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mike-shtil/grx.git"
+  },
+  "keywords": [
+    "flex",
+    "flexbox",
+    "grid",
+    "css",
+    "layout"
+  ],
+  "author": "Mike (Michael) Shtilerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mike-shtil/grx/issues"
+  },
+  "homepage": "https://github.com/mike-shtil/grx#readme"
+}
