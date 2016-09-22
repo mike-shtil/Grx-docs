@@ -24,7 +24,7 @@ body { background: $color-bg-body; color: $color-body; font-family: Helvetica, A
 button { border: none; background-color: #888; }
 small { display: block; font-size: 0.9em; color: #5DA7AB; }
 code { font-family: Consolas, monospace; display: block; color: #C866E6; background-color: #2B2A31; border-radius: 3px; padding: 5px 10px; font-size: 0.9em; }
-.container { width: 1200px; margin-right: auto; margin-left: auto; }
+.container { width: 1200px; max-width: 95%; margin-right: auto; margin-left: auto; }
 .main-header { text-align: center; }
 .main-title { font-weight: 900; font-size: 100px; margin-bottom: 0; }
 

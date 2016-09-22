@@ -10,7 +10,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('demo', function(){
-  return gulp.src('demo/style/**/*.scss')
+  return gulp.src('style/**/*.scss')
      .pipe($.plumber({errorHandler: function(error){
         console.log(error);
         this.emit('end');
@@ -20,5 +20,5 @@ gulp.task('demo', function(){
      .pipe($.autoprefixer({browsers: ['last 1 version', 'iOS 6'], cascade: false}))
      .pipe($.sourcemaps.write({includeContent: false, sourceRoot: '.'}))
      //.pipe($.cssnano({discardDuplicates: false})) //optional minification
-     .pipe(gulp.dest('demo/style'));
+     .pipe(gulp.dest('style/'));
 });

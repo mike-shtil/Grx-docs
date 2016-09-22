@@ -4,7 +4,7 @@
   "description": "Own your layout with a friendly flex-based grid",
   "main": "gulpfile.js",
   "dependencies": {
-    "grx": "^2.2.3"
+    "grx": "^2.4.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
