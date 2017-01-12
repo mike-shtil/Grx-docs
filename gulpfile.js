@@ -6,7 +6,7 @@ gulp.task('default', ['demo', 'watch']);
 
 //watch Files For Changes
 gulp.task('watch', function() {
-  return gulp.watch('styles/**/*.scss', ['demo']);
+  return gulp.watch('style/**/*.scss', ['demo']);
 });
 
 gulp.task('demo', function(){
