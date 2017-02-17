@@ -28,10 +28,9 @@ html {
 body {
     background: $color-bg-body;
     color: $color-body;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 17px;
     line-height: 1.4;
-    font-family: 'Roboto', Helvetica, sans-seritf;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-seritf;
 }
 
 button {
@@ -53,6 +52,10 @@ code {
     border-radius: 3px;
     padding: 5px 10px;
     font-size: 0.9em;
+}
+
+h2, h3 {
+  text-align: center;
 }
 
 .container {

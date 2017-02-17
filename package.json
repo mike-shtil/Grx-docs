@@ -1,10 +1,10 @@
 {
   "name": "grx-docs",
-  "version": "1.0.0",
-  "description": "Own your layout with a friendly flex-based grid",
+  "version": "1.1.0",
+  "description": "Documentation for the Grx flexible layout library",
   "main": "gulpfile.js",
   "dependencies": {
-    "grx": "^2.4.1"
+    "grx": "^2.7.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
