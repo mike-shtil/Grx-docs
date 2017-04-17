@@ -54,7 +54,7 @@ code {
     font-size: 0.9em;
 }
 
-h2, h3 {
+h2 {
   text-align: center;
 }
 
@@ -73,6 +73,10 @@ h2, h3 {
     font-weight: 900;
     font-size: 100px;
     margin-bottom: 0;
+}
+
+.chapter {
+  margin-top: 80px;
 }
 //explanations
 
@@ -227,4 +231,47 @@ pre {
 
 .commands-container {
   margin-top: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 10%;
+  right: 30px;
+  bottom: 10%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: right;
+}
+
+.sidebar-nav-title {
+  text-transform: lowercase;
+  opacity: .2;
+  font-size: .8em;
+  text-align: right;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #4d8ff3;
+  margin-top: 15px;
+
+  &:hover {
+    color: #4d8ff3;
+  }
+
+  &:visited {
+    color: #3f18d9;
+
+    &:hover {
+      color: #6c50d9;
+    }
+  }
+}
+
+.sidebar-sublink {
+  @extend .sidebar-link;
+  font-size: 1em;
+  padding-right: 10px;
+  margin-top: 5px;
 }

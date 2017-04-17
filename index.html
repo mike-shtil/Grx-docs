@@ -10,9 +10,21 @@
 </head>
 
 <body>
-
-    <section class="main container">
-        <section id="gettingStarted">
+    <div class="container grx-row">
+      <aside class="sidebar size-1-4">
+        <h4 class="sidebar-nav-title">Navigation</h3>
+        <nav class="main-nav grx-col">
+          <a class="sidebar-link" href="#gettingStarted">Getting started</a>
+          <a class="sidebar-link" href="#syntax">Syntax</a>
+          <a class="sidebar-sublink" href="#container">Container</a>
+          <a class="sidebar-sublink" href="#alignment">Alignment</a>
+          <a class="sidebar-sublink" href="#sizing">Sizing</a>
+          <a class="sidebar-sublink" href="#responsive">Responsive</a>
+          <a class="sidebar-link" href="#tutorial">Tutorial</a>
+        </nav>
+      </aside>
+      <section class="main size-3-4 size-lg-1-1">
+        <section class="chapter" id="gettingStarted">
             <header class="main-header">
                 <h1 class="main-title">Grx</h1>
                 <h3>Welcome to Grx — a flexbox-based layout grid system.</h3>
@@ -43,25 +55,25 @@
             </div>
         </section>
 
-        <section id="features">
+        <section class="chapter" id="syntax">
             <h2>Syntax</h2>
 
-            <h3>Container</h3>
-            <div class="grx-col gutter-md items-left-middle">
-                <div class="c1"><pre>grx-row</pre></div>
+            <h3 id="container">Container</h3>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>grx-row</pre></div>
                 <div class="c2">
                     <p>defines a container holding children side by side</p>
                 </div>
             </div>
-            <div class="grx-col gutter-md items-left-middle">
-                <div class="c1"><pre>grx-col</pre></div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>grx-col</pre></div>
                 <div class="c2">
                     <p>defines a container holding children one below the other</p>
                 </div>
             </div>
-            <h3>Alignment</h3>
-            <div class="grx-col gutter-md items-left-middle">
-                <div class="c1"><pre>items-[align1]-[?align2]</pre></div>
+            <h3 id="alignment">Alignment</h3>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>items-{align1}-{?align2}</pre></div>
                 <div class="c2">
                     <p>aligns the container's children in the horizontal, vertical or both axes.<br>
                       The directions are identical in both grx-row and grx-col.
@@ -86,16 +98,97 @@
                     </div>
                 </div>
             </div>
-            <div class="grx-col gutter-md items-left-middle">
-                <div class="c1"><pre>center</pre></div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>center</pre></div>
                 <div class="c2">
                     <div>Shorthand for <pre class="inline">items-center-middle</pre></div>
                 </div>
             </div>
-            
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>center</pre></div>
+                <div class="c2">
+                    <div>Shorthand for <pre class="inline">items-center-middle</pre></div>
+                </div>
+            </div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>pull-{direction}</pre></div>
+                <div class="c2">
+                    <p>Pulls this child and all subsequent as far as possible in the given direction.
+                    <h5>Directions:</h5>
+                    <ul>
+                      <li><strong>left</strong> / <strong>right</strong><br>
+                      <small>only apply to children of grx-row</small></li>
+                      <li><strong>top</strong> / <strong>bottom</strong><br>
+                      <small>only apply to children of grx-col</small></li>
+                      <li><strong>start</strong> / <strong>end</strong><br>
+                      <small>pulls horizontally or vertically, if in grx-row or grx-col, respectively. Useful if grx direction may change</small></li>
+                    </ul>
+                  </p>
+                </div>
+            </div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre></pre></div>
+                <div class="c2">
+                    <p></p>
+                </div>
+            </div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>pull-end</pre></div>
+                <div class="c2">
+                    <p></p>
+                </div>
+            </div>
+            <h3 id="sizing">Sizing</h3>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre>size-{nominator}-{base}</pre></div>
+                <div class="c2">
+                  <p>
+                  <ul>
+                    <li>Fraction: an integer between 1 and a given base</li>
+                    <li>Base: 12 / 10 / 5 etc.<br>
+                    <small>Grx supports many bases out of the box (12, 10, 8, 5, 3).<br>
+                      Custom bases can be configured in node_modules/grx/src/_params.scss under $bases</small></li>
+                  </ul>
+                  Nominator/Base is the fraction of the container's size the current child will occupy. Example:
+                  <pre class="inline">size-1-5</pre> will be 1/5 of the container's size.
+                </p>
+                </div>
+            </div>
+            <h3 id="responsive">Responsive breakpoints</h3>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre></pre></div>
+                <div class="c2">
+                    <p></p>
+                </div>
+            </div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre></pre></div>
+                <div class="c2">
+                    <p></p>
+                </div>
+            </div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre></pre></div>
+                <div class="c2">
+                    <p></p>
+                </div>
+            </div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre></pre></div>
+                <div class="c2">
+                    <p></p>
+                </div>
+            </div>
+            <div class="grx-row gutter-md items-left-top">
+                <div class="c1 size-1-4"><pre></pre></div>
+                <div class="c2">
+                    <p></p>
+                </div>
+            </div>
+
         </section>
 
-        <section id="tutorial">
+        <section class="chapter" id="tutorial">
             <h2>Tutorial</h2>
             <h3>We'll create a website layout</h3>
 
@@ -530,7 +623,8 @@
         &lt;/div&gt;
         </pre>
         </section>
-    </section>
+      </section>
+    </div>
 </body>
 
 </html>
